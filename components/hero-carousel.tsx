@@ -18,8 +18,8 @@ const slides: Slide[] = [
     sub: "Learn with purpose. Lead with integrity.",
   },
   {
-    src: "/students-collaborating-in-lab-gold-accents.jpg",
-    alt: "Students in Lab",
+    src: "/campus-building.jpg",
+    alt: "classroom",
     headline: "Industry-Ready Programs",
     sub: "Curriculum aligned with modern industry standards.",
   },
@@ -69,7 +69,7 @@ export function HeroCarousel() {
   return (
     <section
       aria-label="Hero"
-      className="relative h-[90dvh] w-full overflow-hidden"
+      className="relative h-[90dvh] w-full overflow-hidden mt-16"
     >
       {/* Animated Background Patterns */}
       <div className="absolute inset-0 z-5">
@@ -108,7 +108,7 @@ export function HeroCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 z-30 -translate-y-1/2 group rounded-full bg-white/10 backdrop-blur-md border border-white/20 p-3 text-white transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg"
+        className="hidden md:flex absolute left-6 top-1/2 z-30 -translate-y-1/2 group rounded-full bg-white/10 backdrop-blur-md border border-white/20 p-3 text-white transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg"
         aria-label="Previous slide"
       >
         <svg
@@ -128,7 +128,7 @@ export function HeroCarousel() {
 
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 z-30 -translate-y-1/2 group rounded-full bg-white/10 backdrop-blur-md border border-white/20 p-3 text-white transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg"
+        className="hidden md:flex absolute right-6 top-1/2 z-30 -translate-y-1/2 group rounded-full bg-white/10 backdrop-blur-md border border-white/20 p-3 text-white transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg"
         aria-label="Next slide"
       >
         <svg
@@ -197,13 +197,13 @@ export function HeroCarousel() {
               <div className="absolute inset-0 bg-gradient-to-r from-[var(--highlight)] to-[var(--secondary)] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </a>
 
-            <a
+            {/* <a
               href="/contact"
               className="group relative overflow-hidden rounded-full border-2 border-white/80 bg-white/10 backdrop-blur-md px-8 py-4 font-semibold text-white transition-all duration-300 hover:bg-white/20 hover:border-white hover:scale-105 hover:shadow-2xl hover:-translate-y-1 min-w-[180px]"
             >
               <span className="relative z-10">Get in Touch</span>
               <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

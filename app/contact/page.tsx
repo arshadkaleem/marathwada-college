@@ -403,7 +403,10 @@ export default function ContactPage() {
                 <div className="space-y-2  text-center text-sm text-[color:var(--text-light)]">
                   <p>MARATHWADA INSTITUTE OF</p>
                   <p>TECHNOLOGY AND MANAGEMENT</p>
-                  <p>Umari, Dist. Nanded - 431807</p>
+                  <p>
+                    36/04 Chantainya Nagar, Near MSEB Office, <br /> Dahrmabad
+                    Road, Umari, Dist Nanded, 431807
+                  </p>
                   <p>Maharashtra, India</p>
                 </div>
               </div>

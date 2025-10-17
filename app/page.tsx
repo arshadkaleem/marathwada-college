@@ -1,3 +1,4 @@
+"use client";
 import { Navbar } from "@/components/navbar";
 
 import { HeroCarousel } from "@/components/hero-carousel";
@@ -181,12 +182,12 @@ export default function HomePage() {
       </section>
 
       {/* Courses Preview */}
-      <section className="relative bg-gradient-to-br from-[var(--muted)]/50 via-[var(--muted)] to-[var(--muted)]/80 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[var(--muted)]/50 via-[var(--muted)] to-[var(--muted)]/80 py-16 sm:py-20 overflow-hidden">
         {/* Background Decorative Elements */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-[var(--primary)]/10 to-transparent rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-tl from-[var(--secondary)]/8 to-transparent rounded-full blur-3xl animate-pulse delay-1000" />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-[var(--highlight)]/5 to-transparent rounded-full blur-3xl animate-pulse delay-500" />
+          <div className="absolute top-10 left-10 w-40 sm:w-64 h-40 sm:h-64 bg-gradient-to-br from-[var(--primary)]/10 to-transparent rounded-full blur-3xl animate-pulse" />
+          <div className="absolute bottom-10 right-10 w-52 sm:w-80 h-52 sm:h-80 bg-gradient-to-tl from-[var(--secondary)]/8 to-transparent rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 sm:w-96 h-64 sm:h-96 bg-gradient-to-r from-[var(--highlight)]/5 to-transparent rounded-full blur-3xl animate-pulse delay-500" />
         </div>
 
         {/* Subtle Pattern Overlay */}
@@ -194,18 +195,18 @@ export default function HomePage() {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Enhanced Section Header */}
-          <div className="mb-16 text-center">
+          <div className="mb-12 sm:mb-16 text-center">
             {/* Top Accent Line */}
-            <div className="inline-flex items-center gap-4 mb-8">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-transparent via-[var(--secondary)] to-transparent rounded-full" />
-              <span className="text-sm font-bold text-[color:var(--secondary)] uppercase tracking-[0.2em]">
+            <div className="inline-flex flex-wrap justify-center items-center gap-2 sm:gap-4 mb-6 sm:mb-8">
+              <div className="hidden sm:block w-16 h-0.5 bg-gradient-to-r from-transparent via-[var(--secondary)] to-transparent rounded-full" />
+              <span className="text-xs sm:text-sm font-bold text-[color:var(--secondary)] uppercase tracking-[0.15em] sm:tracking-[0.2em]">
                 Academic Excellence
               </span>
-              <div className="w-16 h-0.5 bg-gradient-to-l from-transparent via-[var(--secondary)] to-transparent rounded-full" />
+              <div className="hidden sm:block w-16 h-0.5 bg-gradient-to-l from-transparent via-[var(--secondary)] to-transparent rounded-full" />
             </div>
 
             {/* Main Title */}
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
               <span className="text-[color:var(--primary)]">Our </span>
               <span className="bg-gradient-to-r from-[var(--primary)] via-[var(--secondary)] to-[var(--highlight)] bg-clip-text text-transparent">
                 Programs
@@ -213,41 +214,36 @@ export default function HomePage() {
             </h2>
 
             {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-[color:var(--text-light)] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-[color:var(--text-light)] max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
               Diploma and Degree courses designed for real-world success and
               industry leadership.
-              <br />
-              <span className="font-medium text-[color:var(--primary)]">
+              <br className="hidden sm:block" />
+              <span className="block sm:inline font-medium text-[color:var(--primary)] mt-2 sm:mt-0">
                 Shape your future with our comprehensive academic offerings.
               </span>
             </p>
           </div>
 
-          {/* Enhanced Program Cards Grid */}
+          {/* Program Cards Grid */}
           <div className="grid gap-8 lg:gap-12 md:grid-cols-2 items-stretch">
-            {/* Diploma Courses Card */}
-            <div className="group relative overflow-hidden rounded-3xl border border-[var(--border)]/30 bg-gradient-to-br from-[var(--surface)] via-[var(--surface)]/95 to-[var(--surface)]/90 backdrop-blur-sm p-8 sm:p-10 shadow-xl transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:shadow-[var(--primary)]/10 hover:border-[var(--secondary)]/40">
-              {/* Card Background Effects */}
+            {/* Diploma Card */}
+            <div className="group relative overflow-hidden rounded-3xl border border-[var(--border)]/30 bg-gradient-to-br from-[var(--surface)] via-[var(--surface)]/95 to-[var(--surface)]/90 backdrop-blur-sm p-6 sm:p-10 shadow-xl transition-all duration-700 hover:-translate-y-2 sm:hover:-translate-y-3 hover:shadow-2xl hover:shadow-[var(--primary)]/10 hover:border-[var(--secondary)]/40">
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--primary)]/5 via-transparent to-[var(--secondary)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-[var(--secondary)]/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-gradient-to-bl from-[var(--secondary)]/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              {/* Card Content */}
               <div className="relative z-10">
-                {/* Program Type Badge */}
-                <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-gradient-to-r from-[var(--primary)]/10 to-[var(--secondary)]/10 border border-[var(--primary)]/20">
+                <div className="inline-flex items-center gap-2 mb-4 sm:mb-6 px-3 sm:px-4 py-2 rounded-full bg-gradient-to-r from-[var(--primary)]/10 to-[var(--secondary)]/10 border border-[var(--primary)]/20">
                   <div className="w-2 h-2 rounded-full bg-[var(--primary)] animate-pulse" />
-                  <span className="text-sm font-semibold text-[color:var(--primary)] uppercase tracking-wider">
+                  <span className="text-xs sm:text-sm font-semibold text-[color:var(--primary)] uppercase tracking-wider">
                     Professional Diplomas
                   </span>
                 </div>
 
-                {/* Program Title */}
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[color:var(--primary)] mb-6 group-hover:text-[color:var(--secondary)] transition-colors duration-300">
+                <h3 className="font-serif text-xl sm:text-3xl font-bold text-[color:var(--primary)] mb-4 sm:mb-6 group-hover:text-[color:var(--secondary)] transition-colors duration-300">
                   Diploma Courses
                 </h3>
 
-                {/* Course List */}
-                <div className="space-y-4 mb-8">
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   {[
                     "Advance Diploma in Industrial Safety (ADIS) — 02 Year",
                     "PG Diploma in Production Management — 02 Year",
@@ -262,21 +258,22 @@ export default function HomePage() {
                       <div className="flex-shrink-0 mt-2">
                         <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[var(--secondary)] to-[var(--highlight)] group-hover/item:scale-125 transition-transform duration-300" />
                       </div>
-                      <span className="text-[color:var(--text)] leading-relaxed group-hover:text-[color:var(--primary)] transition-colors duration-300">
+                      <span className="text-sm sm:text-base text-[color:var(--text)] leading-relaxed group-hover:text-[color:var(--primary)] transition-colors duration-300">
                         {course}
                       </span>
                     </div>
                   ))}
                 </div>
 
-                {/* Enhanced CTA Button */}
                 <Link
-                  className="group/btn relative overflow-hidden inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--secondary)] via-[var(--secondary)]/95 to-[var(--highlight)] px-8 py-4 font-semibold text-[color:var(--secondary-foreground)] shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-[var(--secondary)]/25 hover:scale-105 hover:-translate-y-1"
+                  className="group/btn relative overflow-hidden inline-flex items-center gap-2 sm:gap-3 rounded-full bg-gradient-to-r from-[var(--secondary)] via-[var(--secondary)]/95 to-[var(--highlight)] px-6 sm:px-8 py-3 sm:py-4 font-semibold text-[color:var(--secondary-foreground)] shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-[var(--secondary)]/25 hover:scale-105 hover:-translate-y-1"
                   href="/courses#diploma"
                 >
-                  <span className="relative z-10">View Diploma Programs</span>
+                  <span className="relative z-10 text-sm sm:text-base">
+                    View Diploma Programs
+                  </span>
                   <svg
-                    className="w-5 h-5 relative z-10 transition-transform group-hover/btn:translate-x-1"
+                    className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 transition-transform group-hover/btn:translate-x-1"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -292,19 +289,16 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              {/* Floating Decorative Elements */}
+              {/* Floating Decorative Element */}
               <div className="absolute bottom-4 right-4 w-24 h-24 bg-gradient-to-tl from-[var(--primary)]/5 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             </div>
 
             {/* Degree Courses Card */}
             <div className="group relative overflow-hidden rounded-3xl border border-[var(--border)]/30 bg-gradient-to-br from-[var(--surface)] via-[var(--surface)]/95 to-[var(--surface)]/90 backdrop-blur-sm p-8 sm:p-10 shadow-xl transition-all duration-700 hover:-translate-y-3 hover:shadow-2xl hover:shadow-[var(--primary)]/10 hover:border-[var(--secondary)]/40">
-              {/* Card Background Effects */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)]/5 via-transparent to-[var(--highlight)]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-[var(--highlight)]/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              {/* Card Content */}
               <div className="relative z-10">
-                {/* Program Type Badge */}
                 <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-gradient-to-r from-[var(--secondary)]/10 to-[var(--highlight)]/10 border border-[var(--secondary)]/20">
                   <div className="w-2 h-2 rounded-full bg-[var(--secondary)] animate-pulse" />
                   <span className="text-sm font-semibold text-[color:var(--secondary)] uppercase tracking-wider">
@@ -312,12 +306,10 @@ export default function HomePage() {
                   </span>
                 </div>
 
-                {/* Program Title */}
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[color:var(--primary)] mb-6 group-hover:text-[color:var(--highlight)] transition-colors duration-300">
                   Degree Programs
                 </h3>
 
-                {/* Course List */}
                 <div className="space-y-4 mb-8">
                   {[
                     "B.E. in Computer Science — 4 Years",
@@ -338,7 +330,6 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                {/* Enhanced CTA Button */}
                 <Link
                   className="group/btn relative overflow-hidden inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[var(--highlight)] via-[var(--highlight)]/95 to-[var(--secondary)] px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-[var(--highlight)]/25 hover:scale-105 hover:-translate-y-1"
                   href="/courses#degree"
@@ -361,28 +352,28 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              {/* Floating Decorative Elements */}
+              {/* Floating Decorative Element */}
               <div className="absolute bottom-4 left-4 w-24 h-24 bg-gradient-to-tr from-[var(--secondary)]/5 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             </div>
           </div>
 
           {/* Additional Info Section */}
-          <div className="mt-16 text-center">
-            <div className="inline-flex items-center gap-6 px-8 py-4 rounded-2xl bg-gradient-to-r from-[var(--surface)]/80 via-[var(--muted)]/50 to-[var(--surface)]/80 backdrop-blur-sm border border-[var(--border)]/30 shadow-lg">
+          <div className="mt-12 sm:mt-16 text-center">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 px-6 sm:px-8 py-4 rounded-2xl bg-gradient-to-r from-[var(--surface)]/80 via-[var(--muted)]/50 to-[var(--surface)]/80 backdrop-blur-sm border border-[var(--border)]/30 shadow-lg">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] animate-pulse" />
                 <span className="text-sm font-medium text-[color:var(--text-light)]">
                   Industry-Aligned Curriculum
                 </span>
               </div>
-              <div className="w-px h-6 bg-[var(--border)]" />
+              <div className="hidden sm:block w-px h-6 bg-[var(--border)]" />
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[var(--secondary)] to-[var(--highlight)] animate-pulse delay-500" />
                 <span className="text-sm font-medium text-[color:var(--text-light)]">
                   Placement Assistance
                 </span>
               </div>
-              <div className="w-px h-6 bg-[var(--border)]" />
+              <div className="hidden sm:block w-px h-6 bg-[var(--border)]" />
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[var(--highlight)] to-[var(--primary)] animate-pulse delay-1000" />
                 <span className="text-sm font-medium text-[color:var(--text-light)]">
