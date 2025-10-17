@@ -275,7 +275,7 @@ export function Footer() {
             </Link>
 
             {/* Quick Stats */}
-              {/* <div className="grid grid-cols-2 gap-4 pt-6 border-t border-[var(--border)]/50">
+            {/* <div className="grid grid-cols-2 gap-4 pt-6 border-t border-[var(--border)]/50">
                 {[
                   {
                     number: "95%",
@@ -315,6 +315,7 @@ export function Footer() {
       <div className="relative border-t border-[var(--border)] bg-gradient-to-r from-[var(--muted)]/30 via-[var(--surface)] to-[var(--muted)]/30">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            {/* Left side */}
             <div className="text-center sm:text-left">
               <p className="text-xs text-[color:var(--text-light)] flex items-center gap-2">
                 <span className="hidden sm:inline">©</span>
@@ -329,15 +330,20 @@ export function Footer() {
               </p>
             </div>
 
-            {/* <div className="flex items-center gap-2">
-              <span className="text-xs text-[color:var(--text-light)]/70">
-                Made with
-              </span>
-              <div className="w-3 h-3 bg-gradient-to-r from-[var(--secondary)] to-[var(--highlight)] rounded-full animate-pulse"></div>
-              <span className="text-xs text-[color:var(--text-light)]/70">
-                for students
-              </span>
-            </div> */}
+            {/* Right side */}
+            <div className="text-center sm:text-right">
+              <p className="text-xs text-[color:var(--text-light)]/70">
+                Designed and Developed by{" "}
+                <a
+                  href="https://mokshasolutions.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[color:var(--secondary)] hover:underline"
+                >
+                  Moksha Solutions
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
