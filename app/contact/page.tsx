@@ -360,10 +360,10 @@ export default function ContactPage() {
                         Phone:
                       </span>{" "}
                       <a
-                        href="tel:+918765432109"
+                        href="tel:+919403468371"
                         className="hover:text-[color:var(--highlight)] transition-colors duration-300"
                       >
-                        +91 8275428401
+                        +91 9403468371
                       </a>
                     </p>
                   </div>

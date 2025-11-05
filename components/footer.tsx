@@ -110,10 +110,10 @@ export function Footer() {
                   </svg>
                 </div>
                 <a
-                  href="tel:+918275428401"
+                  href="tel:+919403468371"
                   className="text-sm text-[color:var(--text-light)] hover:text-[var(--highlight)] transition-colors duration-300 font-medium"
                 >
-                  +91 8275428401
+                  +91 9403468371
                 </a>
               </div>
             </div>
